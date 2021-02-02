@@ -1,0 +1,27 @@
+{
+    "secret": "gvara-super-secret-key-12342#$##%$%ˆ",
+    "sockPort": 9998,
+    "appPort": 8080,
+
+    "UIRootUrl": "http://localhost:8090",
+    "BERootUrl": "http://localhost:8080",
+    "staticRootUrl": "http://localhost:8080/be/static",
+    "social": {
+        "facebookAuth": {
+            "clientID": "181223505804107",
+            "clientSecret": "e64a519c91250e8e68a0c795429063d5",
+            "callbackURL": "http://localhost:8080/api/v1/auth/facebook/callback"
+        }
+    },
+    "db": {
+        "name": "gvara-db",
+        "testName": "gvara-db-test",
+        "host": "localhost",
+        "port": 27017,
+        "user": "",
+        "password": ""
+    },
+    "urlPatterns": {
+        "authRedirect": "{UIRootUrl}?jwt={jwt}"
+    }
+}
